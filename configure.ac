@@ -278,7 +278,7 @@ AM_COND_IF([SAIVS],
     AM_COND_IF([SYNCD], [
     SAVED_FLAGS="$CXXFLAGS"
     CXXFLAGS="-Xlinker --no-as-needed -lsai -I$srcdir/SAI/inc -I$srcdir/SAI/experimental -I$srcdir/SAI/meta"
-    AC_CHECK_FUNCS(sai_bulk_object_clear_stats sai_bulk_object_get_stats sai_tam_telemetry_get_data)
+    AC_CHECK_FUNCS(sai_bulk_object_clear_stats sai_bulk_object_get_stats sai_query_stats_st_capability sai_tam_telemetry_get_data)
     CXXFLAGS="$SAVED_FLAGS"
     ])
 ])
